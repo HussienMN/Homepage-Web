@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Aufgabe 3.3</title>
+    </head>
+    <style>
+ table {
+  font-family: monospace;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+td, th {
+  border: 1px solid #209187;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+<body>
+    
+<table>
+    <tr>
+      <th>Aufgabe No.</th>
+      <th>Die Lösung</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>
+
+
+      function printquee(){<br>
+        var values = [];<br>
+        var queue = new Object();<br>
+        queue.add = function(value){<br>
+          values.push(value);<br>
+        }
+        queue.isEmpty = function(){<br>
+          return values.length == 0;<br>
+        }
+        queue.take = function(){<br>
+          if(queue.isEmpty()) throw "empty";<br>
+          return values.shift();<br>
+        }
+         return queue;
+      }<br><br><br>
+      
+      var quee = printquee();<br>
+      
+      quee.add(5);<br>
+      quee.add(10);<br>
+      quee.add(20);<br>
+      console.log(quee.take());<br>
+      quee.add(30);<br>
+      console.log(quee.take());<br>
+      console.log(quee.take());<br>
+      console.log(quee.take());<br>
+      console.log(quee.isEmpty());<br>
+      console.log(quee.take());
+      
+      
+      </td>
+    </tr>
+  </table>
+</body>    
+</html>

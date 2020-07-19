@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Aufgabe 3.2</title>
+    </head>
+    <style>
+ table {
+  font-family: monospace;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+td, th {
+  border: 1px solid #209187;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+<body>
+    
+<table>
+    <tr>
+      <th>Aufgabe No.</th>
+      <th>Die Lösung</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>function gensymf(v) {
+        c = 0;
+      return function() {
+            console.log(v + c++)
+      } 
+    }
+    var gensym = gensymf('G');
+    gensym();</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>function fibonaccif(x, y) {
+        return function() {
+          var next = x;
+          x = y;
+          y += next
+      
+          return next
+        }
+      }</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>function addg(first) {
+        function more(next) {
+          if (next === undefined ) {
+            return first;
+          }
+          first += next;
+          return more;
+        }
+        if (first !== undefined ) {
+          return more;
+        }
+      }</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>function applyg(add) {
+        return function (first) {
+          if (first === undefined ) {
+            return first;
+          }
+          return function more(next) {
+            if (next === undefined ) {
+              return first;
+            }
+            first = add(first, next);
+            return more;
+          };
+        };
+      }
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        function add(x, y) {
+            return x + y;
+        }
+        
+        function mul(x, y) {
+            return x * y;
+        }
+        
+        function m(value, source) {
+          return obj = {
+            value: value,
+            source: (source == null) ? value : source
+          }
+        }
+        
+        
+        function binarymf(operation, operationSymbol) {
+          return function(m1, m2) {
+            return obj = {
+              value: operation(m1.value, m2.value),
+              source: "(" + m1.value + operationSymbol + m2.value + ")"
+            }
+          }
+        }
+        
+        addm = binarymf(add, "+");
+        mulm = binarymf(mul, "*");
+        
+        out1 = JSON.stringify(addm(m(3), m(4)));
+        out2 = JSON.stringify(mulm(m(5), m(5)));
+        
+        console.log(out1);
+        console.log(out2);
+        </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>	function binarymf (binary, string) {
+        return function(m1, m2) {
+          var value  = binary(m1.value, m2.value),
+              source = '(' + m1.source + string + m2.source + ')'
+          return binarymf (value, source);
+        }
+      }</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>
+            function binarymf(binary, op) {
+                return function(m1, m2) {
+                  if( typeof m1 === 'number' ) { m1 = m(m1) }
+                  if( typeof m2 === 'number' ) { m2 = m(m2) }
+                  return binarymf(
+                    binary(m1.value, m2.value),
+                    '(' + m1.source + op + m2.source + ')'
+                  );
+                }
+              }
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>
+            function triangle  (x,y) {
+                var c = (x*x)+(y*y);
+                return Math.sqrt(c);
+            }
+
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>function exp(input) {
+            var binary,
+                a,  b
+          
+            if (typeof input === 'number' ) { return input }
+          
+            binary = input[0],
+            a = input[1],
+            b = input[2]
+          
+            return binary(a, b)
+          
+          }
+           </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>
+            function value(x) {
+				var y = x;
+				return y;
+			}
+        </td>
+      </tr>
+
+  </table>
+</body>    
+</html>
