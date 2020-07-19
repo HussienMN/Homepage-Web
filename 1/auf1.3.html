@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aufgabe 1.3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: none;
+  display: inline-flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  overflow: auto;
+  text-align: center;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  overflow: auto;
+ /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #25383C;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+}
+.img{
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  width:300px;
+  height:390px;
+  border-radius: 20px;
+  border-style: ridge;
+}
+.button{
+	border-radius: 12px;
+	background-color: #F88017;
+  	border: none;
+  	text-align: center;
+  	width: 400px;
+}
+.button1{
+  border-radius: 8px;
+  background-color: #F88017;
+    border: none;
+    text-align: center;
+    width: 400px;
+}
+.h3{
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.a{
+	font-size: 13px;
+	color: #D1D0CE;
+	padding-top: 2px;
+}
+.p{
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+	<div class="topnav">
+	  <a href="#" class="a">The book series</a>
+	  <a href="#" class="a">Testimonial</a>
+	  <a href="#" class="a">The Author</a>
+	  <a href="#" class="a">Free resources</a>
+	</div>
+
+	<div class="content">
+
+       		          <h3 class="h3">You don't know Javascript</h3>
+
+      <div class="row">
+          <div class="column">
+                    <img src="https://kaul.inf.h-brs.de/data/2019/img/landing-img.png" class="img">
+
+          </div>
+        
+          <div class="column">
+            <p class="p" style=" font-family: Lucida Console; font-weight: bold; color: #3D3C3A;"> Don't just drift through Javascript.</p></br>
+            <p class="p" style=" font-family: Lucida Console; font-weight: bold; color: #3D3C3A;">Understand how javascript works</p></br>
+            <p style=" font-family: Lucida Console; font-weight: bold; color: #3D3C3A;">Start your journey through the bumpy side of javascript</p></br>
+            <button class="button1"><p style="color: white; font-weight: bold;">ORDER YOUR COPY NOW</p></button>
+          </div>
+      </div>
+
+
+	</div>
+
+
+	   	<div class="footer">
+	  		<p style="color: white; font-family: inherit;">The first ebook in the book series is absolutely free.</p>
+	  		<button class="button"><p style="color: white; font-weight: bold;">FIND OUT MORE ABOUT THIS OFFER</p></button>
+		</div>
+</body>
+</html>
