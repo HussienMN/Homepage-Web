@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aufgabe 4.2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div>
+  <h1>Renderliste</h1>
+  <h3>Neuer Redner :</h3>
+    <input type="text" id="myInput" placeholder="redner"  style="width: 180px;">
+    <button onclick="addItem()" value ="Add items">Hinzufügen</button>
+</div>
+
+<ul id="myUL">
+
+</ul>
+
+<script>
+
+var updatedTime;
+var difference;
+var tInterval;
+var savedTime;
+var paused = 0;
+var running = 0;
+
+
+// var i;
+// for (i = 0; i < close.length; i++) {
+//   close[i].onclick = function() {
+//     var div = this.parentElement;
+//     div.style.display = "none";
+//   }
+// }
+
+function addItem() {
+
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue+"  ");
+  li.appendChild(t);
+
+  document.getElementById("myUL").appendChild(li);
+  document.getElementById("myInput").value = "";
+
+  var span1 = document.createElement("Button");
+  var txt1 = document.createTextNode("Start");
+
+  var span2 = document.createElement("Button");
+  var txt2 = document.createTextNode("Stop");
+
+  var span3 = document.createElement("Button");
+  var txt3 = document.createTextNode("Reset");
+
+  var span = document.createElement("Button");
+  var txt = document.createTextNode("Delete");
+
+  var time = document.createElement("span");
+  var timetxt = document.createTextNode(""+0+0+":"+0+0+":"+0+0+" ");
+  time.appendChild(timetxt);
+  li.appendChild(time);
+
+  span1.className = "start";
+  span1.appendChild(txt1);
+  li.appendChild(span1);
+  span1.onclick = "startTimer"
+
+  span2.className = "Stop";
+  span2.appendChild(txt2);
+  li.appendChild(span2);
+
+  span3.className = "Reset";
+  span3.appendChild(txt3);
+  li.appendChild(span3);
+
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+var close = document.getElementsByClassName("close");
+var start = document.getElementsByClassName("start");
+var stop  = document.getElementsByClassName("stop");
+var reset = document.getElementsByClassName("reset");
+
+var startTimerButton = document.querySelector('.startTimer');
+
+function startTimer(){
+  if(!running){
+    startTime = new Date().getTime();
+    tInterval = setInterval(getShowTime, 1);
+    paused = 0;
+    running = 1;
+    }
+}
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

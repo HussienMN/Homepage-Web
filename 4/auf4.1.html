@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<div>
+  <h1>Einkaufsliste</h1>
+  <h3>Enter a new item :</h3>
+    <input type="text" id="myInput" placeholder="item" required style="width: 180px;">
+    <button onclick="addItem()" value ="Add items">Add items</button>
+</div>
+
+<ul id="myUL">
+
+</ul>
+
+<script>
+
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+function addItem() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  if (inputValue == "") {
+    alert('enter something')
+  } else {
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+
+  document.getElementById("myUL").appendChild(li);
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("Button");
+  var txt = document.createTextNode("Delete");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+  }
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
