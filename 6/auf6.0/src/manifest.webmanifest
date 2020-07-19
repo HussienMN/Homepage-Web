@@ -1,0 +1,8 @@
+{
+    "name": "Web modul app",
+    "short-name": "lit element app",
+    "display": "standalone",
+    "discription": "Aufgabe 6.0",
+    "scope": "/",
+    "start_url": "/"
+}

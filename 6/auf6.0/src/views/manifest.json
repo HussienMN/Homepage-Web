@@ -1,0 +1,11 @@
+{
+  "name": "Web modul app",
+  "short_name": "lit element app",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}
