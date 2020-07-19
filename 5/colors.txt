@@ -1,0 +1,1 @@
+Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.

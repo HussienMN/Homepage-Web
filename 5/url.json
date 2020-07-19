@@ -1,0 +1,25 @@
+{
+    "html":{
+        "heading":"Headings Are Important Search engines use the headings to index the structure and content of your web pages.  Users often skim a page by its headings. It is important to use headings to show the document structure headings should be used for main headings, followed by  headings, then the less important and so on",
+        "paragraph":"https://www.w3schools.com/html/html_paragraphs.asp",
+        "links":"",
+        "image":"",
+        "table":""
+    },
+    "Css": {
+        "selectors":"",
+        "colors":"",
+        "boxes":"",
+        "display":"",
+        "float":""
+    },
+    "Javascript":{
+        "functions":"",
+        "objects":"",
+        "scope":"",
+        "events":"",
+        "hoisting":"",
+        "strict_mode":""
+    }
+
+}

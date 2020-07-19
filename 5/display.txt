@@ -1,0 +1,2 @@
+Die display Eigenschaft legt den Typ einer Rendering-Box eines Elements fest. Für HTML sind die standardmäßigen display Werte in der HTML-Spezifikation beschrieben und in den User- bzw.
+ Browser-Stylesheets angegeben. Für XML-Dokumente ist der voreingestellte Wert inline.

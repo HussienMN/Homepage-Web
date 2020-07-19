@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Featch API</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<center><button id="button" style="background-color: cornflowerblue; font-size: 15px ; height: 40px; width: 160px; border-radius: 6px; margin-top: 20px;">Read from the files</button>
+	
+	<div id="result" style="margin-top: 10px;">here werden die Daten von Text file gezeigt </div></center>
+	<main></main>
+	<script type="text/javascript">
+
+		window.addEventListener('load', ()=>{
+    		fetchData();
+		});
+		async function fetchData() {
+			const res = await fetch('./A.txt');
+			const json = await res.json();
+
+			const main = document.querySelector('main');
+
+			json.articles.forEach(article => {
+				const element = document.createElement('new-data');
+				element.article = article;
+				main.appendChild(element);
+			});
+		}
+		document.getElementById('button').addEventListener('click', loadText);
+		function loadText() {
+			fetch('//objects.txt')
+			.then(function(response){
+				return response.text();
+			})
+			.then (function(data){
+				document.getElementById('result').innerText = data;
+				// console.log(data);
+			})
+			fetch('//4/paragraph.txt')
+			.then(function(response){
+				return response.text();
+			})
+			.then (function(data){
+				document.getElementById('result').innerText = data;
+				// console.log(data);
+			}).catch(function(error){
+				document.getElementById('result').innerText = error;
+
+			})
+		}
+	</script>
+</body>
+</html>

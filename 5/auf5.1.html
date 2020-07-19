@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Aufgabe 5.2</title>
+</head>
+
+<body>
+
+    <p id="p">text1</p>
+    <p id="p2">tex2</p>
+
+    <script>
+        // function delay(callback,duration) {
+        //     setTimeout(() => {
+        //         callback();
+        //     }, duration);
+        // }
+
+        // delay(()=>{
+        //     document.getElementById("p").innerText ="Hi form first function";
+        // },800);
+        // delay(()=>{
+        //     document.getElementById("p").innerText ="Hi form second function";
+        // },1200);
+        // delay(()=>{
+        //     document.getElementById("p").innerText ="Hi form third function";
+        // },300);
+
+        var file_1 = "Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values."
+        var file_2 = "The CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which sideThe CSS clear property specifies what elements can float beside the cleared element and on which side"
+        let delay = duration => new Promise((resolve, reject)=>{
+            setTimeout(() => {
+                resolve('Hi promise');
+            }, duration);
+        });
+        let first = delay(200).then(()=>{
+            document.getElementById("p").innerText = file_2;
+        });
+        let second = delay(200).then(()=>{
+            document.getElementById("p2").innerText =file_1;
+        });
+        Promise.all(
+            [
+                first,
+                second
+            ]
+        ).then((value)=>document.getElementById("p")=value)
+
+    </script>
+</body>
+</html>

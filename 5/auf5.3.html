@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+.topnav {
+  background-color: #F9966B;
+  text-align: left;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-style: white,solid;
+}
+.button{
+	border-radius: 8px;
+	background-color: #98AFC7;
+	margin: 8px;
+	width: 13%;
+	font-weight: bold;
+	border-style: double;
+}
+.button-1{
+	border-radius: 8px;
+	background-color: #98AFC7;
+	margin: 8px;
+	width: 100%;
+	font-weight: bold;
+	border-style: double;
+	display: table;
+}	
+.footer {
+  background-color:  black;
+  text-align: center;
+  color: white;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-style: white,solid;
+}
+.footer-font{
+	font-size: xx-large;
+}
+.link-words{
+	font-size: small;
+	color: white;
+}
+p,a{
+	  display: inline;
+}
+.div_cont{
+	background-color: #38ACEC;
+	width: 800px;
+	height: 1000px;
+	border: 1px  black;
+	overflow: scroll;
+}
+.flex-container {
+  display: flex;
+}
+.div1{
+  background-color: #E1A6A3;
+  font-size: 20px;
+  color: white;
+  padding-right: 75px;
+  padding-left: 40px;
+}
+.div2{
+  background-color: #808080;
+  border: 1px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<h2 style="text-align: center; color: white; font-size: 40px; margin-top: 0px;" class="p">WWW-Navigator</h2>
+		  <button class="button" onclick="htmlList()">HTML</button>
+		  <button class="button" onclick="cssList()">CSS</button>
+		  <button class="button" onclick="jsList()">JavaScript</button>
+		  <button class="button" onclick="other()">other</button>
+	</div>
+
+	<div class="flex-container">
+	  <div class="div1" id="right">		 
+	  	  <button class="button-1">Promise</button>
+		  <button class="button-1">async</button>
+		  <button class="button-1">fetch</button>
+		  <button class="button-1">callback</button>
+		  <button class="button-1">class</button>
+	  </div>
+	  <div class="div2" id="div_2">
+	  	<br>
+	  	<br>
+	  	<p style="color: black; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum... adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet</p>
+	  </div>
+	  <div class="div1">Aditional information linkes to external ressources</div>  
+	  </div>
+
+	<div class="footer">
+		<p class="footer-font">Footer:</p>
+		<a href="#" class="link-words">Sitemap</a>
+		<a href="#" class="link-words">Home</a>
+		<a href="#" class="link-words">News</a>
+		<a href="#" class="link-words">Contact</a>
+		<a href="#" class="link-words">About</a>
+
+	</div>
+	<script type="text/javascript">
+		function htmlList() {
+			document.getElementById('div_2').textContent="HTML is the standard markup language for Web pages it!";
+	    	document.getElementById("right").innerHTML = 
+			"<button id='heading' onclick='head()' class='button-1'>heading</button> <button id='paragraph' onclick='paragraph()' class='button-1'>paragraph</button> <button id='link' onclick='link()' class='button-1'>links</button> <button id='images' onclick='images()' class='button-1'>images</button> <button id='tables' onclick='tables()' class='button-1'>Tables</button>" ;
+		}
+		function cssList() {
+			document.getElementById('div_2').textContent="CSS is a language that describes the style of an HTML document.";
+	    	document.getElementById("right").innerHTML = 
+			"<button id='selector' onclick='selector()' class='button-1'>Selectors</button> <button id='colors' onclick='colors()' class='button-1'>Colors</button> <button id='boxes' onclick='boxes()' class='button-1'>boxes</button> <button id='display' onclick='display()' class='button-1'>Display</button> <button id='float' onclick='float()' class='button-1'>Float</button>" ;
+
+		}
+		function jsList() {
+			document.getElementById('div_2').textContent="JavaScript is the programming language of HTML and the Web.";
+			document.getElementById("right").innerHTML = 
+			"<button id='functions' onclick='functions()' class='button-1'>Functions</button> <button id='objects' onclick='objects()' class='button-1'>Objects</button> <button id='scope' onclick='scope()' class='button-1'>Scope</button> <button id='events' onclick='events()' class='button-1'>Events</button> <button id='hoisting' onclick='hoisting()' class='button-1'>Hoisting</button> <button id='strictmode' onclick='strictmode()' class='button-1'>Strict mode</button>" ;
+
+		}
+		function other() {
+			document.getElementById('div_2').textContent="";
+			document.getElementById("right").innerHTML = 
+			"<button id='other' onclick='other()' class='button-1'>other</button>";
+
+		}		
+
+		function head() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+ 				 };
+ 			 xhttp.open("GET", "/4/heading.txt", true);
+  			 xhttp.send();
+			}
+		}
+		function paragraph() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+ 				 };
+				}
+ 			 xhttp.open("GET", "/4/paragraph.txt", true);
+  			xhttp.send();
+		}
+		function link() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/links.txt", true);
+  			xhttp.send();
+		}
+		function images() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/images.txt", true);
+  			xhttp.send();
+		}
+		function tables() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/tables.txt", true);
+  			xhttp.send();
+		}
+		function selector() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "../4/selectors.txt", true);
+  			xhttp.send();
+		}
+		function colors() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/colors.txt", true);
+  			xhttp.send();
+		}
+		function boxes() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/boxes.txt", true);
+  			xhttp.send();
+		}
+		function display() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/display.txt", true);
+  			xhttp.send();
+		}
+		function float() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/float.txt", true);
+  			xhttp.send();
+		}
+		function functions() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/functions.txt", true);
+  			xhttp.send();
+		}
+		function objects() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/objects.txt", true);
+  			xhttp.send();
+		}
+		function scope() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/scope.txt", true);
+  			xhttp.send();
+		}
+		function events() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/events.txt", true);
+  			xhttp.send();
+		}
+		function hoisting() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/hoisting.txt", true);
+  			xhttp.send();
+		}
+		function strictmode() {
+  			var xhttp = new XMLHttpRequest();
+ 			 xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("div_2").innerHTML =
+     				 this.responseText;
+            }
+ 			   };
+ 			 xhttp.open("GET", "/4/strict.txt", true);
+  			xhttp.send();
+		}
+	</script>
+</body>
+</html>
