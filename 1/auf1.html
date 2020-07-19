@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aufgabe 1.2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<style type="text/css">
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+	.main_div{
+		background-color:#a9d7d1;
+		padding: 5px;
+		margin-right: 0px;
+		margin-left: 0px;
+		text-align: center;
+		font-size: 30px;
+      	font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+      	letter-spacing: 1px;
+	}
+	.inner_div{
+		background-color: white;
+		border-radius: 5px;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-top: 20px;
+      	justify-content: center;
+      	display: grid;
+      	grid-template-columns: auto auto auto  ;
+      	grid-gap: 10px;
+  		text-align: center;
+  		line-height: 45px;
+  		padding-right: 30px;
+	}
+	.p{
+		font-size: 20px; 
+		padding: 0px;
+		margin: 0px;
+		font-family:'Garamond', sans-serif;
+		color: #393939;
+		letter-spacing: -1px;
+		font-weight: initial;
+	}
+	input{
+		width: 250px;
+		height: 20px;
+	}
+	label{
+		font-size: 17px; 
+		margin: 0px;
+		font-family: inherit;
+		color: #505050;
+		letter-spacing: -1px;
+	}
+	.item1{ grid-column: 1/4;}
+	.items{text-align: right;}
+</style>
+<body>
+  
+  <div class ="main_div">
+  	<p id="my_font">Survey form</p>
+
+
+  <form>
+
+  	<div class="inner_div">
+
+  		<div class="item1"><p class="p">Let us know we can improve FreeCodeCamp</p></div>
+
+		<div class="items"><label for="fname">∗Name:</label></div>
+		<div></div>
+		<div>
+			<input type="text" id="fname" required="required" name="firstname" placeholder="Enter your name">
+		</div>
+
+		<div class="items"><label for="email">∗Email:</label></div>
+		<div></div>
+		<div>
+			<input type="Email" id="Email" required="required" name="Email" placeholder="Enter your email">
+		</div>		
+
+
+		<div class="items"><label for="age">∗Age:</label></div>
+		<div></div>
+		<div>
+			<input type="number" id="age" required="required" name="age" placeholder="Enter your age">
+		</div>	
+
+		<div class="items"><label for="age">∗Which option best describes your current role?</label></div>
+		<div></div>
+		<div>
+                <select id="role" name="role" style="width: 125px; height: 30px; float: left; margin-left: 63px;">
+                  <option value="95">Student</option>
+                  <option value="96">Teacher</option>
+                  <option value="96">Teacher</option>
+                </select>
+        </div>	
+
+		<div class="items"><label for="age">∗How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+		<div></div>
+		<div style=" float: left;">
+            <input type="radio" name="recommend" value="Definitely" style=" float: left; height: 40px;">
+			<label style=" float: left;">Definitely</label><br>
+            <input type="radio" name="recommend" value="Maybe" style=" float: left; height: 40px;">
+            <label style=" float: left;">Maybe</label><br>
+            <input type="radio" name="recommend" value="Not sure" style=" float: left; height: 40px;">
+            <label style=" float: left;">Not sure</label><br>
+        </div>
+
+		<div class="items"><label for="age">∗What do you like most in FCC?</label></div>
+		<div></div>
+		<div>
+                <select id="role" name="role" style="width: 125px; height: 30px; float: left; margin-left: 63px;">
+                  <option value="95">Select an option</option>
+                  <option value="96"></option>
+                  <option value="96"></option>
+                </select>
+        </div>                
+
+		<div class="items"><label for="age">∗Things that should be improved in the future (check all that apply):</label></div>
+		<div></div>
+		<div style=" float: left;">
+            <input type="checkbox" name="recommend" value="Definitely" style="float: left; height: 40px; ">
+            <label style="float: left;">Front-end Projects</label><br>
+            <input type="checkbox" name="recommend" value="Maybe" style="float: left; height: 40px;">
+            <label style="float: left;">Back-end Projects</label><br>
+            <input type="checkbox" name="recommend" value="Not sure" style="float: left; height: 40px;">
+            <label style="float: left;">Data visualization</label><br>
+        </div>
+  	</div>
+  
+  </form>
+
+  </div>
+
+</body>
+</html>

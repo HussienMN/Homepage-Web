@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aufgabe 1.2</title>
+</head>
+<style type="text/css">
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+	.main_div{
+		background-color:#a9d7d1;
+		padding: 5px;
+		margin-right: 0px;
+		margin-left: 0px;
+		text-align: center;
+		font-size: 30px;
+      	font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+      	letter-spacing: 1px;
+	}
+	.inner_div{
+		background-color: white;
+		border-radius: 5px;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 20px;
+      	justify-content: center;
+      	display: grid;
+      	grid-template-columns: auto auto auto ;
+      	grid-gap: 10px;
+  		/* text-align: center; */
+  		line-height: 32px;
+  		/* padding-right: 30px; */
+	}
+	.p{
+		font-size: 20px; 
+		padding: 0px;
+		margin: 0px;
+		font-family:'Garamond', sans-serif;
+		color: #393939;
+		letter-spacing: -1px;
+		font-weight: initial;
+        /* float: right; */
+	}
+
+	label{
+		font-size: 17px; 
+		/* margin: 0px; */
+		font-family: inherit;
+		color: #505050;
+		letter-spacing: -1px;
+	}
+	.item1{ grid-column: 1/4;}
+	.items{text-align: right; width: 80%;}
+    table, th, td {
+        border-collapse: collapse;
+        font-size: 15px; 
+        font-weight: bold;
+        font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+        color: #535353;
+    }
+</style>
+<body>
+    <div class ="main_div">
+          <p id="my_font">Survey form</p>
+          <form>
+              <div class="inner_div">
+                  <div class="item1"><p class="p">Let us know we can improve FreeCodeCamp</p></div>
+                  <div class="items"><label for="fname">∗Name:</label></div>
+                  <div></div>
+                  <div>
+                      <table >
+                        <tr>
+                         <td></td>
+                         <td style="text-align: left;">
+                            <input type="text" id="fname" required="required" name="firstname" placeholder="Enter your name">
+                        </td>
+                        </tr>
+                     </table>
+                  </div>
+
+                  <div class="items"><label for="email">∗Email:</label></div>
+                  <div></div>
+                  <div>
+                      <table >
+                        <tr>
+                         <td></td>
+                         <td style="text-align: left;">
+                      <input type="Email" id="Email" required="required" name="Email" placeholder="Enter your email">
+                        </td>
+                        </tr>
+                     </table>
+                  </div>
+
+                  <div class="items"><label for="age">∗Age:</label></div>
+                  <div></div>
+                  <div>
+                      <table >
+                        <tr>
+                         <td></td>
+                         <td style="text-align: left;">
+                            <input type="number" id="age" required="required" name="age" placeholder="Enter your age">
+                        </td>
+                        </tr>
+                     </table>
+                  </div>	
+                  <div class="items"><label for="age">∗Which option best describes your current role?</label></div>
+                  <div></div>
+                  <div>
+                      <table >
+                        <tr>
+                         <td></td>
+                         <td style="text-align: left;">
+                            <select id="role" name="role">
+                                <option value="95">Student</option>
+                                <option value="96">Teacher</option>
+                                <option value="96">Teacher</option>
+                              </select>
+                        </td>
+                        </tr>
+                     </table>
+                   </div>
+                   <div class="items"><label for="age">∗How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+                   <div></div>
+
+                   <div>
+                        <!-- <input type="radio" name="recommend" value="Definitely" style="">
+                        <label style="">Definitely</label><br>
+                        <input type="radio" name="recommend" value="Maybe" style="">
+                        <label style="">Maybe</label><br>
+                        <input type="radio" name="recommend" value="Not sure" style="">
+                        <label style="">Not sure</label><br> -->
+                        <table >
+                            <tr>
+                             <td><input type="radio" name="recommend" value="Definitely" ></td>
+                             <td style="text-align: left;">Definitely</td>
+                            </tr>
+                           <tr>
+                             <td><input type="radio" name="recommend" value="Definitely"></td>
+                             <td style="text-align: left;">Maybe</td>
+                           </tr>
+                           <tr>
+                             <td><input type="radio" name="recommend" value="Definitely"></td>
+                             <td style="text-align: left;">Not sure</td>
+                           </tr>
+                         </table>
+                   </div>
+
+                   <div class="items"><label for="age">∗What do you like most in FCC?</label></div>
+                   <div></div>
+
+                   <div>
+                        <table >
+                            <tr>
+                             <td></td>
+                             <td style="text-align: left;">
+                                <select id="role" name="role">
+                                    <option value="95">Select an option</option>
+                                    <option value="96"></option>
+                                    <option value="96"></option>
+                                </select>
+                            </td>
+                            </tr>
+                         </table>
+                     </div>
+
+                    <div class="items"><label for="age">∗Things that should be improved in the future (check all that apply):</label></div>
+		                <div></div>
+		            <div>
+                        <!-- <input type="checkbox" name="recommend" value="Definitely" style=" ">
+                        <label style="">Front-end Projects</label><br>
+                        <input type="checkbox" name="recommend" value="Maybe" style="">
+                        <label style="">Back-end Projects</label><br>
+                        <input type="checkbox" name="recommend" value="Not sure" style="">
+                        <label style="">Data visualization</label><br> -->
+                        <table >
+                            <tr>
+                             <td><input type="checkbox" name="recommend"></td>
+                             <td style="text-align: left;">Front-end Projects</td>
+                            </tr>
+                           <tr>
+                             <td><input type="checkbox" name="recommend"></td>
+                             <td style="text-align: left;">Back-end Projects</td>
+                           </tr>
+                           <tr>
+                             <td><input type="checkbox" name="recommend"></td>
+                             <td style="text-align: left;">Data visualization</td>
+                           </tr>
+                         </table>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
