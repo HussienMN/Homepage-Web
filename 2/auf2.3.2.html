@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aufgabe3.2 flex</title>
+	<style type="text/css">
+.topnav {
+  background-color: #C4726F;
+  text-align: left;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-style: white,solid;
+}
+.button{
+	border-radius: 8px;
+	background-color: #98AFC7;
+	margin: 8px;
+	width: 15%;
+	font-weight: bold;
+	border-style: double;
+}	
+.footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-style: white,solid;
+}
+.footer-font{
+	font-size: xx-large;
+}
+.link-words{
+	font-size: small;
+	color: white;
+}
+p,a{
+	  display: inline;
+}
+.div_cont{
+	background-color: #38ACEC;
+	width: 800px;
+	height: 1000px;
+	border: 1px  black;
+	overflow: scroll;
+}
+.flex-container {
+  display: flex;
+}
+.div1{
+  background-color: #C48189;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-right: 75px;
+  padding-left: 40px;
+}
+.div2{
+  background-color: #6698FF;
+  border: 1px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+	.grid-container{ width: 100%;   border-top-right-radius: 12px;}	
+	.topnav{ width: 100%; }
+	.div2{width: 75%; margin-right: 0px;}
+	.div1{width: 25%; padding-right: 10px; }
+}
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<h2 style="text-align: center;" class="p">Header</h2>
+		  <button class="button">Home</button>
+		  <button class="button">News</button>
+		  <button class="button">Contact</button>
+		  <button class="button">About</button>
+	</div>
+
+	<div class="flex-container">
+	  <div class="div1">Left<br> menu<br> with<br> many<br> items</div>
+	  <div class="div2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum... 
+	  </div>
+	  <div class="div1">Right</div>  
+	  </div>
+
+	<div class="footer">
+		<p class="footer-font">Footer:</p>
+		<a href="#" class="link-words">Sitemap</a>
+		<a href="#" class="link-words">Home</a>
+		<a href="#" class="link-words">News</a>
+		<a href="#" class="link-words">Contact</a>
+		<a href="#" class="link-words">About</a>
+
+	</div>
+</body>
+</html>
