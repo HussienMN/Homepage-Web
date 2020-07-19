@@ -1,0 +1,10 @@
+{
+  "name": "@first-component",
+  "short_name": "@litelement-form",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null
+}
